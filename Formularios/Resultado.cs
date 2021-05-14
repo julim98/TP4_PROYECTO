@@ -17,7 +17,6 @@ namespace TP4_PROYECTO.Formularios
         {
             InitializeComponent();
             general.cargarTabla(dgvVuelos, txtPromedio);
-            dgvVuelos.AutoResizeColumn(0);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

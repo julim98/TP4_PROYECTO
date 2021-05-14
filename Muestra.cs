@@ -23,11 +23,11 @@ namespace TP4_PROYECTO
 
         }
 
-        public Muestra(int vuelo, int acumulado, Random random)
+        public Muestra(int vuelo, int acumulado, Random random, int seleccion)
         {
             this.vuelo = vuelo;
             this.rndPresentados = Math.Round(random.NextDouble(), 2);
-            this.presentados = calcularIntervalo(this.rndPresentados);
+            this.presentados = calcularIntervalo(this.rndPresentados, seleccion);
             this.pasajerosReprogramados = cantidadReprogramados(this.presentados, out int costo);
             this.costoReprogramacion = costo;
             this.utilidad = calcularUtilidad(this.presentados);
@@ -61,27 +61,100 @@ namespace TP4_PROYECTO
             else return presentados * 100;
         }
 
-        public int calcularIntervalo(double rndPepresentados)
+        public int calcularIntervalo(double rndPepresentados, int seleccion)
         {
-            if (rndPepresentados < 0.05)
+            if (seleccion == 31)
             {
-                return 28;
+                if (rndPepresentados < 0.10)
+                {
+                    return 28;
+                }
+                else if (rndPepresentados < 0.35)
+                {
+                    return 29;
+                }
+                else if (rndPepresentados < 0.85)
+                {
+                    return 30;
+                }
+                else
+                {
+                    return 31;
+                }
             }
-            else if (rndPepresentados < 0.3)
+            else if (seleccion == 32)
             {
-                return 29;
+                if (rndPepresentados < 0.05)
+                {
+                    return 28;
+                }
+                else if (rndPepresentados < 0.3)
+                {
+                    return 29;
+                }
+                else if (rndPepresentados < 0.8)
+                {
+                    return 30;
+                }
+                else if (rndPepresentados < 0.95)
+                {
+                    return 31;
+                }
+                else
+                {
+                    return 32;
+                }
+
             }
-            else if (rndPepresentados < 0.8)
+            else if (seleccion == 33)
             {
-                return 30;
-            }
-            else if (rndPepresentados < 0.95)
-            {
-                return 31;
+                if (rndPepresentados < 0.05)
+                {
+                    return 29;
+                }
+                else if (rndPepresentados < 0.25)
+                {
+                    return 30;
+                }
+                else if (rndPepresentados < 0.7)
+                {
+                    return 31;
+                }
+                else if (rndPepresentados < 0.9)
+                {
+                    return 32;
+                }
+                else
+                {
+                    return 33;
+                }
             }
             else
             {
-                return 32;
+                if (rndPepresentados < 0.05)
+                {
+                    return 29;
+                }
+                else if (rndPepresentados < 0.15)
+                {
+                    return 30;
+                }
+                else if (rndPepresentados < 0.55)
+                {
+                    return 31;
+                }
+                else if (rndPepresentados < 0.85)
+                {
+                    return 32;
+                }
+                else if (rndPepresentados < 0.95)
+                {
+                    return 33;
+                }
+                else
+                {
+                    return 34;
+                }
             }
         }
     }

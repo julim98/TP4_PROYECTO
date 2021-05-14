@@ -14,7 +14,6 @@ namespace TP4_PROYECTO
         private int txtCantidadVuelos;
         private int txtDesde;
         private int txtFilasAMostrar;
-        private Muestra ultimo;
 
         public int TxtReservaciones { get => txtReservaciones; set => txtReservaciones = value; }
         public int TxtCantidadVuelos { get => txtCantidadVuelos; set => txtCantidadVuelos = value; }
@@ -53,7 +52,7 @@ namespace TP4_PROYECTO
             {
                 if (i == 0)
                 {
-                    muestraActual = new Muestra(i + 1, 0, random);
+                    muestraActual = new Muestra(i + 1, 0, random, txtReservaciones);
                 }
                 else
                 {
@@ -65,7 +64,7 @@ namespace TP4_PROYECTO
                     dt.Rows.Add(muestraActual.vuelo, muestraActual.rndPresentados, muestraActual.presentados, muestraActual.pasajerosReprogramados, muestraActual.costoReprogramacion, muestraActual.utilidad, muestraActual.gananciaNeta, muestraActual.acGanancia, muestraActual.promedio);
                 }
 
-                muestraSiguiente = new Muestra(i + 2, muestraActual.acGanancia, random);
+                muestraSiguiente = new Muestra(i + 2, muestraActual.acGanancia, random, txtReservaciones);
             }
 
             // agregamos la ultima fila
