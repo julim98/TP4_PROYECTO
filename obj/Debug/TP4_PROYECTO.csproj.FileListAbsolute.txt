@@ -1,0 +1,11 @@
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\bin\Debug\TP4_PROYECTO.exe.config
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\bin\Debug\TP4_PROYECTO.exe
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\bin\Debug\TP4_PROYECTO.pdb
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.csprojAssemblyReference.cache
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.Formularios.Main.resources
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.Properties.Resources.resources
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.csproj.GenerateResource.cache
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.csproj.CoreCompileInputs.cache
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.exe
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.pdb
+C:\Users\Julian\Documents\UTN\4 AÑO\Simulacion\Practico\TP4\TP4_PROYECTO\obj\Debug\TP4_PROYECTO.Formularios.Resultado.resources
