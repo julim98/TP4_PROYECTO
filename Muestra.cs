@@ -15,7 +15,7 @@ namespace TP4_PROYECTO
         public int costoReprogramacion;
         public int utilidad;
         public int gananciaNeta;
-        public int acGanancia;
+        public long acGanancia;
         public double promedio;
 
         public Muestra()
@@ -23,7 +23,7 @@ namespace TP4_PROYECTO
 
         }
 
-        public Muestra(int vuelo, int acumulado, Random random, int seleccion)
+        public Muestra(int vuelo, long acumulado, Random random, int seleccion)
         {
             this.vuelo = vuelo;
             this.rndPresentados = Math.Round(random.NextDouble(), 2);

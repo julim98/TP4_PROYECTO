@@ -51,7 +51,8 @@
             this.btnSimular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSimular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSimular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSimular.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimular.ForeColor = System.Drawing.Color.Transparent;
             this.btnSimular.Image = ((System.Drawing.Image)(resources.GetObject("btnSimular.Image")));
             this.btnSimular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSimular.Location = new System.Drawing.Point(209, 310);
@@ -72,7 +73,8 @@
             this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.Transparent;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(427, 401);

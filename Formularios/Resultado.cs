@@ -16,12 +16,24 @@ namespace TP4_PROYECTO.Formularios
         public Resultado(General general)
         {
             InitializeComponent();
-            general.cargarTabla(dgvVuelos, txtPromedio);
+            Timer timer = new Timer();
+            timer.Interval = 1;
+            timer.Tick += delegate (object s, EventArgs ee)
+            {
+                ((Timer)s).Stop();
+                general.cargarTabla(dgvVuelos, txtPromedio);
+            };
+            timer.Start();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void Resultado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

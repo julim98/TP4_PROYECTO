@@ -105,6 +105,7 @@
             this.Name = "Resultado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resultado";
+            this.Load += new System.EventHandler(this.Resultado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVuelos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

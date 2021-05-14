@@ -35,6 +35,7 @@ namespace TP4_PROYECTO
             Random random = new Random();
 
             DataTable dt = new DataTable();
+            tabla.DataSource = dt;
 
             // agregamos las columnas y el tipo de dato que se manejara en cada una de ellas
             dt.Columns.Add("Vuelo", typeof(int));
@@ -44,7 +45,7 @@ namespace TP4_PROYECTO
             dt.Columns.Add("Costo", typeof(int));
             dt.Columns.Add("Utilidad", typeof(int));
             dt.Columns.Add("Ganancia Neta", typeof(int));
-            dt.Columns.Add("Ac. Ganancia", typeof(int));
+            dt.Columns.Add("Ac. Ganancia", typeof(long));
             dt.Columns.Add("Promedio", typeof(double));
 
             // creamos las muestras y cargamos a la dt las solicitadas
