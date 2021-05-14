@@ -23,6 +23,7 @@ namespace TP4_PROYECTO
         private int txtCantidadVuelos;
         private int txtDesde;
         private int txtFilasAMostrar;
+        private Muestra ultimo;
 
         public List<int> Vuelo { get => vuelo; set => vuelo = value; }
         public List<double> RndPresentados { get => rndPresentados; set => rndPresentados = value; }
@@ -48,21 +49,22 @@ namespace TP4_PROYECTO
 
         public Muestra calcularPromedio()
         {
-            Muestra muestraActual;
+            Muestra muestraActual = new Muestra();
             Muestra muestraSiguiente = new Muestra();
+            Random random = new Random();
 
             for (int i = 0; i < txtCantidadVuelos; i++)
             {
                 if (i == 0)
                 {
-                    muestraActual = new Muestra(i + 1, 0);
+                    muestraActual = new Muestra(i + 1, 0, random);
                 }
                 else
                 {
                     muestraActual = muestraSiguiente;
                 }
 
-                if (i + 1 > txtDesde && i + 1 < txtDesde + txtFilasAMostrar)
+                if (i + 1 >= txtDesde && i + 1 < txtDesde + txtFilasAMostrar)
                 {
                     vuelo.Add(muestraActual.vuelo);
                     rndPresentados.Add(muestraActual.rndPresentados);
@@ -72,15 +74,13 @@ namespace TP4_PROYECTO
                     utilidad.Add(muestraActual.utilidad);
                     gananciaNeta.Add(muestraActual.gananciaNeta);
                     acGanancia.Add(muestraActual.acGanancia);
+                    promedio.Add(muestraActual.promedio);
                 }
 
-                if (i + 1 == txtCantidadVuelos)
-                {
-                    return muestraActual;
-                }
-
-                muestraSiguiente = new Muestra(i + 2, muestraActual.acGanancia);
+                muestraSiguiente = new Muestra(i + 2, muestraActual.acGanancia, random);
             }
+            ultimo = muestraActual;
+            return muestraActual;
         }
 
         public void cargarTabla(DataGridView tabla)

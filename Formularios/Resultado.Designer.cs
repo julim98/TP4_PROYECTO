@@ -37,9 +37,17 @@
             // 
             // dgvVuelos
             // 
+            this.dgvVuelos.AllowUserToAddRows = false;
+            this.dgvVuelos.AllowUserToDeleteRows = false;
+            this.dgvVuelos.AllowUserToResizeColumns = false;
+            this.dgvVuelos.AllowUserToResizeRows = false;
+            this.dgvVuelos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvVuelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVuelos.Location = new System.Drawing.Point(12, 99);
             this.dgvVuelos.Name = "dgvVuelos";
+            this.dgvVuelos.ReadOnly = true;
+            this.dgvVuelos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.dgvVuelos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvVuelos.Size = new System.Drawing.Size(1014, 340);
             this.dgvVuelos.TabIndex = 0;
             // 
@@ -51,6 +59,7 @@
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label1
             // 

@@ -26,6 +26,12 @@ namespace TP4_PROYECTO.Formularios
                 return false;
             }
 
+            if (cmbReservas.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione la cantidad de reservas");
+                return false;
+            }
+
             if (!int.TryParse(txtDesde.Text, out int desde) && !(desde > 0) && !(desde <= cantidad))
             {
                 MessageBox.Show("Ingrese correctamente desde que vuelo quiere visualizar");
@@ -40,7 +46,7 @@ namespace TP4_PROYECTO.Formularios
 
             if (!((desde + cantFilas - 1) <= cantidad))
             {
-                MessageBox.Show("Las filas a mostrar superan a las filas que desea crear");
+                MessageBox.Show("Las filas a mostrar estan fuera del rango");
                 return false;
             }
 

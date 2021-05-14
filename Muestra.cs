@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP4_PROYECTO
 {
-    class Muestra
+    public class Muestra
     {
         public int vuelo;
         public double rndPresentados;
@@ -23,18 +23,17 @@ namespace TP4_PROYECTO
 
         }
 
-        public Muestra(int vuelo, int acGanancia)
+        public Muestra(int vuelo, int acumulado, Random random)
         {
-            Random random = new Random();
             this.vuelo = vuelo;
-            this.rndPresentados = random.NextDouble();
+            this.rndPresentados = Math.Round(random.NextDouble(), 2);
             this.presentados = calcularIntervalo(this.rndPresentados);
             this.pasajerosReprogramados = cantidadReprogramados(this.presentados, out int costo);
             this.costoReprogramacion = costo;
             this.utilidad = calcularUtilidad(this.presentados);
             this.gananciaNeta = this.utilidad - this.costoReprogramacion;
-            this.acGanancia = gananciaNeta + acGanancia;
-            this.promedio = this.acGanancia / vuelo;
+            this.acGanancia = gananciaNeta + acumulado;
+            this.promedio = Math.Round((double)acGanancia / vuelo, 2);
         }
 
 

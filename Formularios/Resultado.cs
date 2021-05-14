@@ -18,7 +18,13 @@ namespace TP4_PROYECTO.Formularios
             InitializeComponent();
             Muestra ultimo = general.calcularPromedio();
             general.cargarTabla(dgvVuelos);
+            dgvVuelos.AutoResizeColumn(0);
             txtPromedio.Text = ultimo.promedio.ToString();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
