@@ -76,14 +76,6 @@ namespace TP4_PROYECTO
 
             // asigno el promedio al txt asociado
             promedio.Text = muestraActual.promedio.ToString();
-
-            //public Resultado(General general)
-            //{
-            //    InitializeComponent();
-            //    general.cargarTabla(dgvVuelos, txtPromedio);
-            //    dgvVuelos.AutoResizeColumn(0);
-            //}
-
         }
     }
 }

@@ -16,10 +16,8 @@ namespace TP4_PROYECTO.Formularios
         public Resultado(General general)
         {
             InitializeComponent();
-            Muestra ultimo = general.calcularPromedio();
-            general.cargarTabla(dgvVuelos);
+            general.cargarTabla(dgvVuelos, txtPromedio);
             dgvVuelos.AutoResizeColumn(0);
-            txtPromedio.Text = ultimo.promedio.ToString();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
